@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.heading {
+  color: white;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2874f0;
+  padding: 10px;
+}
+.nav > input {
+  padding: 5px 10px;
+  width: 50%;
+}
+.main-page {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+label {
+  display: block;
+  margin: 5px 10px;
+  text-align: start;
+}
+label > span {
+  padding-left: 5px;
+}
+.card {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.image {
+  width: 300px;
+  height: 300px;
+}
+.brand_name {
+  color: gray;
+  margin-right: 10px;
+}
+.prices,
+.flex,
+.inner-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.inner-nav > p {
+  margin: 0 10px;
+}
+.prices > span {
+  margin: 0 5px;
+}
+.all-prod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.original-price {
+  color: grey;
+  text-decoration: line-through;
+}
+.discount {
+  color: green;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: orangered;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  width: 90vw;
+}
+.cart-items-box {
+  padding: 1rem;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+.cart-details-box {
+  padding: 1rem;
+  border: 1px solid black;
+  text-align: start;
+}
+.cart-image {
+  width: 100px;
+  height: 100px;
+}
+.cart-items-details-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.cart-items {
+  text-align: start;
+  margin-left: 10px;
+}
+.btn-incdec {
+  padding: 0 7px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-weight: bold;
+  margin: 0 3px;
+}
+.btn-cart-reducers {
+  border: none;
+  padding: 5px 10px;
+  margin: 10px 0;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cart-price {
+  padding: 10px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.cart-price > span {
+  margin: 0 10px;
+}
