@@ -21,6 +21,9 @@ export function reducerFunc(state, action) {
     case "REMOVE_FROM_SL":
       return {
         ...state,
+        Products: state.Products.map((prod) =>
+          prod.id === action.payload.id ? { ...prod, isInCart: false } : prod
+        ),
         saveForLater: state.saveForLater.filter(
           (item) => item.id !== action.payload.id
         )
@@ -28,6 +31,9 @@ export function reducerFunc(state, action) {
     case "SAVE_FOR_LATER":
       return {
         ...state,
+        Products: state.Products.map((prod) =>
+          prod.id === action.payload.id ? { ...prod, isInCart: false } : prod
+        ),
         cartItems: state.cartItems.filter(
           (item) => item.id !== action.payload.id
         ),
@@ -36,6 +42,9 @@ export function reducerFunc(state, action) {
     case "MOVE_TO_CART_FROM_SL":
       return {
         ...state,
+        Products: state.Products.map((prod) =>
+          prod.id === action.payload.id ? { ...prod, isInCart: true } : prod
+        ),
         cartItems: state.cartItems.concat(action.payload),
         saveForLater: state.saveForLater.filter(
           (item) => item.id !== action.payload.id
